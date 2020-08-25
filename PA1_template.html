@@ -441,7 +441,7 @@ max_interval &lt;- time_interval[ind_max_step]</code></pre>
 <pre class="r"><code>total_na &lt;- sum(is.na(data$steps))</code></pre>
 <p>There are, in total, <strong>2304</strong> missing values in the data set.</p>
 <ol start="2" style="list-style-type: decimal">
-<li>Filling in all the missing values.</li>
+<li>Filling in all the missing values, by substituing the mean value of same intervals over all days.</li>
 </ol>
 <pre class="r"><code>update_data &lt;- data
 avg_intervals &lt;- cbind(avg_steps_per_time_interval, time_interval)
