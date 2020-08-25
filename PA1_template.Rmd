@@ -78,7 +78,7 @@ total_na <- sum(is.na(data$steps))
 
 There are, in total, **`r total_na`** missing values in the data set.
 
-2. Filling in all the missing values. 
+2. Filling in all the missing values, by substituing the mean value of same intervals over all days. 
 
 ``` {r, echo=TRUE}
 update_data <- data
